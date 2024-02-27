@@ -49,16 +49,11 @@ function getRandomInt(min, max) {
 // game loop
 function loop() {
 
-    // Loop that now uses a base counter of 1000/15 to simulate 60 frames rather
+    // Loop that now uses a base counter of 1350/15 (90 millisecond delay) to simulate 30 frames rather
     // than pulling the browsers framerate.
     setTimeout(() => {
         requestAnimationFrame(loop);
-    }, 1000 / 15)
-
-    // slow game loop to 15 fps instead of 60 (60/15 = 4)
-    // if (++count < 4 ) {
-    //return;
-    //}
+    }, 1350 / 15)
 
     //count = 0; // Reset the FPS counter
     context.clearRect(0, 0, canvas.width, canvas.height);
