@@ -143,7 +143,7 @@ function placeTetromino() {
     // Show score to website, updated after the above code runs
     const playerScore = document.getElementById("playerScore");
 
-    playerScore.textContent = `Score: ${score}`;
+    playerScore.textContent = `Current Score: ${score}`;
 
     tetromino = getNextTetromino();
 }
