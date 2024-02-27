@@ -155,4 +155,10 @@ document.addEventListener('keydown', function(e) {
 });
 
 // start the game
-requestAnimationFrame(loop);
+// when the player presses the spacebar, the loop begins
+document.body.onkeyup = function (e) {
+    if (e.keyCode == 32)
+    {
+        requestAnimationFrame(loop);
+    }
+}
