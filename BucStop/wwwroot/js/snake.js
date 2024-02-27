@@ -48,15 +48,20 @@ function getRandomInt(min, max) {
 
 // game loop
 function loop() {
-  requestAnimationFrame(loop);
 
-  // slow game loop to 15 fps instead of 60 (60/15 = 4)
-  if (++count < 4) {
-    return;
-  }
+    // Loop that now uses a base counter of 1000/15 to simulate 60 frames rather
+    // than pulling the browsers framerate.
+    setTimeout(() => {
+        requestAnimationFrame(loop);
+    }, 1000 / 15)
 
-  count = 0; // Reset the FPS counter
-  context.clearRect(0,0,canvas.width,canvas.height);
+    // slow game loop to 15 fps instead of 60 (60/15 = 4)
+    // if (++count < 4 ) {
+    //return;
+    //}
+
+    //count = 0; // Reset the FPS counter
+    context.clearRect(0, 0, canvas.width, canvas.height);
 
   // move snake by it's velocity
   snake.x += snake.dx;
