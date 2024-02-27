@@ -46,9 +46,16 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+// will display an instruction for the player in order to trigger the loop of the game
+function showStartScreen() {
+    context.font = '36px Arial';
+    context.textAlign = 'center';
+    context.fillText('Press space to start', canvas.width / 2, canvas.height / 2);
+}
+
 // game loop
 function loop() {
-  requestAnimationFrame(loop);
+    requestAnimationFrame(loop);
 
   // slow game loop to 15 fps instead of 60 (60/15 = 4)
   if (++count < 4) {
@@ -56,7 +63,7 @@ function loop() {
   }
 
   count = 0; // Reset the FPS counter
-  context.clearRect(0,0,canvas.width,canvas.height);
+    context.clearRect(0, 0, canvas.width, canvas.height);
 
   // move snake by it's velocity
   snake.x += snake.dx;
@@ -162,3 +169,5 @@ document.body.onkeyup = function (e) {
         requestAnimationFrame(loop);
     }
 }
+
+showStartScreen();
