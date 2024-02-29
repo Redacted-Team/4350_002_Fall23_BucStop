@@ -140,6 +140,11 @@ function placeTetromino() {
             break;
     }
 
+    // Show score to website, updated after the above code runs
+    const playerScore = document.getElementById("playerScore");
+
+    playerScore.textContent = `Current Score: ${score}`;
+
     tetromino = getNextTetromino();
 }
 
