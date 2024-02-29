@@ -49,14 +49,16 @@ function getRandomInt(min, max) {
 // game loop
 function loop() {
 
+
+
     // Loop that now uses a base counter of 1350/15 (90 millisecond delay) to simulate 30 frames rather
     // than pulling the browsers framerate.
-    setTimeout(() => {
-        requestAnimationFrame(loop);
-    }, 1350 / 15)
+  setTimeout(() => {
+    requestAnimationFrame(loop);
+  }, 1350 / 15)
 
     //count = 0; // Reset the FPS counter
-    context.clearRect(0, 0, canvas.width, canvas.height);
+  context.clearRect(0, 0, canvas.width, canvas.height);
 
   // move snake by it's velocity
   snake.x += snake.dx;
@@ -101,6 +103,15 @@ function loop() {
     if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
 
+
+        // Show score to website, updated after the above code runs
+      const playerScore = document.getElementById("playerScore");
+
+      // Has to be - 4 to displace the start length
+      // This has to be here to change the textContent of the 'Play.cshtml' to print the correct current score. 
+      playerScore.textContent = `Current Score: ${snake.maxCells - 4}`;
+
+
       // canvas is 400x400 which is 25x25 grids
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
@@ -117,7 +128,7 @@ function loop() {
         snake.maxCells = 4;
         snake.dx = grid;
         snake.dy = 0;
-
+        playerScore.textContent = `Current Score: ${0}`;
         apple.x = getRandomInt(0, 25) * grid;
         apple.y = getRandomInt(0, 25) * grid;
       }
