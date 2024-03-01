@@ -46,24 +46,19 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// will display an instruction for the player in order to trigger the loop of the game
-function showStartScreen() {
-    context.font = '36px Arial';
-    context.textAlign = 'center';
-    context.fillText('Press space to start', canvas.width / 2, canvas.height / 2);
-}
-
 // game loop
 function loop() {
+
+
+
+    // Loop that now uses a base counter of 1350/15 (90 millisecond delay) to simulate 30 frames rather
+    // than pulling the browsers framerate.
+  setTimeout(() => {
     requestAnimationFrame(loop);
+  }, 1350 / 15)
 
-  // slow game loop to 15 fps instead of 60 (60/15 = 4)
-  if (++count < 4) {
-    return;
-  }
-
-  count = 0; // Reset the FPS counter
-    context.clearRect(0, 0, canvas.width, canvas.height);
+    //count = 0; // Reset the FPS counter
+  context.clearRect(0, 0, canvas.width, canvas.height);
 
   // move snake by it's velocity
   snake.x += snake.dx;
@@ -108,6 +103,15 @@ function loop() {
     if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
 
+
+        // Show score to website, updated after the above code runs
+      const playerScore = document.getElementById("playerScore");
+
+      // Has to be - 4 to displace the start length
+      // This has to be here to change the textContent of the 'Play.cshtml' to print the correct current score. 
+      playerScore.textContent = `Current Score: ${snake.maxCells - 4}`;
+
+
       // canvas is 400x400 which is 25x25 grids
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
@@ -124,7 +128,7 @@ function loop() {
         snake.maxCells = 4;
         snake.dx = grid;
         snake.dy = 0;
-
+        playerScore.textContent = `Current Score: ${0}`;
         apple.x = getRandomInt(0, 25) * grid;
         apple.y = getRandomInt(0, 25) * grid;
       }
@@ -169,5 +173,3 @@ document.body.onkeyup = function (e) {
         requestAnimationFrame(loop);
     }
 }
-
-showStartScreen();
