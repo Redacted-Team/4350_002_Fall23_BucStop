@@ -128,9 +128,11 @@ function loop() {
             // check collision with all cells after this one (modified bubble sort)
             for (var i = index + 1; i < snake.cells.length; i++) {
 
-                // snake occupies same space as a body part. reset game
+                // snake occupies same space as a body part. End game
                 if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
                     isGameOver = true;
+
+                    /* Reset game data. Idea maybe make a function with this 
                     snake.x = 160;
                     snake.y = 160;
                     snake.cells = [];
@@ -140,6 +142,7 @@ function loop() {
                     playerScore.textContent = `Current Score: ${0}`;
                     apple.x = getRandomInt(0, 25) * grid;
                     apple.y = getRandomInt(0, 25) * grid;
+                    */
                 }
             }
         });
