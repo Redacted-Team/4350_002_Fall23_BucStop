@@ -116,8 +116,8 @@ function loop() {
                 const playerScore = document.getElementById("playerScore");
 
                 // Has to be - 4 to displace the start length
-                // This has to be here to change the textContent of the 'Play.cshtml' to print the correct current score. snake.maxCells - 4
-                playerScore.textContent = `Current Score: ${isGameOver}`;
+                // This has to be here to change the textContent of the 'Play.cshtml' to print the correct current score.
+                playerScore.textContent = `Current Score: ${snake.maxCells - 4}`;
 
 
                 // canvas is 400x400 which is 25x25 grids
