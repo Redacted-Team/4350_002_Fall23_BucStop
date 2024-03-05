@@ -336,5 +336,18 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
-// start the game
-rAF = requestAnimationFrame(loop);
+// will display an instruction for the player in order to trigger the loop of the game
+function showStartScreen() {
+    context.font = '36px Arial';
+    context.textAlign = 'center';
+    context.fillText('Press space to start', canvas.width / 2, canvas.height / 2);
+}
+
+// on keyboard press of space, start the game.
+document.body.onkeyup = function (e) {
+    if (e.keyCode == 32) {
+        rAF = requestAnimationFrame(loop);
+    }
+}
+
+showStartScreen();
