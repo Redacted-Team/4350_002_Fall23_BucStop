@@ -118,10 +118,16 @@ function endGame() {
     // Display the winner
     const winner = playerScore === 7 ? "Player" : "Computer";
     context.font = '36px Arial';
-    context.fillText(`${ winner } wins!`, canvas.width / 2 - 100, canvas.height / 2);
+    context.fillText(`${ winner } wins!`, canvas.width / 2, canvas.height / 2);
     
     // Stop the game loop
     cancelAnimationFrame(loop);
+}
+
+function showStartScreen() {
+    context.font = '36px Arial';
+    context.textAlign = 'center';
+    context.fillText('Press space to start', canvas.width / 2, canvas.height / 2);
 }
 
 // game loop
@@ -195,8 +201,8 @@ function loop() {
 
     // Display the scores
     context.font = '24px Arial';
-    context.fillText(`Player: ${ playerScore }`, 20, 30);
-    context.fillText(`Computer: ${ computerScore }`, canvas.width - 200, 30);
+    context.fillText(`Player: ${ playerScore }`, canvas.width - 325, 30);
+    context.fillText(`Computer: ${ computerScore }`, canvas.width - 100, 30);
 
     // End the game if either player or computer reaches 7 points
     if (playerScore === 7 || computerScore === 7) {
@@ -252,4 +258,11 @@ document.addEventListener('keyup', function (e) {
 });
 
 // start the game
-requestAnimationFrame(loop);
+// when the player presses the spacebar, the loop begins
+document.body.onkeyup = function (e) {
+    if (e.keyCode == 32) {
+        requestAnimationFrame(loop);
+    }
+}
+
+showStartScreen();

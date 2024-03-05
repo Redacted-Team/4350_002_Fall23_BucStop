@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo docker pull $(DOCKER-REPO-PATH)/bucstop
+sudo docker pull sirethan/bucstop
 
 sudo docker compose up --no-deps -d bucstop
 

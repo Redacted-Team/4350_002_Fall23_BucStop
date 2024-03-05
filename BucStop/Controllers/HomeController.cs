@@ -32,7 +32,7 @@ namespace BucStop.Controllers
             return View();
         }
 
-        //Takes the user to the privacy policy page.
+        //Takes the user to the about policy page.
         public IActionResult Privacy()
         {
             return View();
@@ -40,6 +40,12 @@ namespace BucStop.Controllers
 
         //Takes the user to the game criteria page.
         public IActionResult GameCriteria()
+        {
+            return View();
+        }
+
+        //Takes the user to version 2.1 page
+        public IActionResult TwoDotOne()
         {
             return View();
         }
