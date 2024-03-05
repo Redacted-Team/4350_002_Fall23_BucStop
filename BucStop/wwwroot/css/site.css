@@ -36,7 +36,7 @@ html * {
 }
 
 /* Default Colors */
-h1 {
+h1, h2, h3{
     color: #FFC72C; /* ETSU Gold */
 }
 
