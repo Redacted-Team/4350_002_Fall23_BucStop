@@ -49,6 +49,12 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+function showStartScreen() {
+    context.font = '36px Arial';
+    context.textAlign = 'center';
+    context.fillText('Press space to start', canvas.width / 2, canvas.height / 2);
+}
+
 // game loop
 function loop() {
 
@@ -186,3 +192,5 @@ document.body.onkeyup = function (e) {
         requestAnimationFrame(loop);
     }
 }
+
+showStartScreen();
