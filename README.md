@@ -1,5 +1,5 @@
 # BucStop
-### A Team Bobby Project
+### A Team [Redacted] Project
 ### Members:
 > Josh Rucevice, Bryson Brandon, Kurt Brewer, Patrick Vergason
 > Ethan Hensley, Charlie Shahan, Ethan Webb
