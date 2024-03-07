@@ -12,7 +12,7 @@ is a place to put games created by ETSU students.
 This project also communicates to a microservice with HTTP calls for the game information, the repository is hosted at [Micro Service](https://github.com/Redacted-Team/4350_002_Fall23_MicroService). It is deployed with the microservice using docker compose, see the scripts folder for the docker-compose.yml file.
 
 ### Backlog Information:
-[Backlog]([https://docs.google.com/document/d/1qtNMQAEP9aWnK6pfo39iGT0Dhm9uwL6oDHdy6B-Vy-4/edit#heading=h.mgz5ua27kudv](https://brandonbcb02.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?epics=visible&atlOrigin=eyJpIjoiMjgzYjkwZGI0ZjU3NDNiM2JhMDNiOWU4MDliZjQ0YjEiLCJwIjoiaiJ9))
+[Backlog]((https://brandonbcb02.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?epics=visible&atlOrigin=eyJpIjoiMjgzYjkwZGI0ZjU3NDNiM2JhMDNiOWU4MDliZjQ0YjEiLCJwIjoiaiJ9))
 
 ### Project Plan:
 [Project Plan Doc link](https://docs.google.com/document/d/1lopwnWAl-WA3CEhNJGGfSxrIz2FvDrpibQSW70T8A-o/edit?usp=sharing)
