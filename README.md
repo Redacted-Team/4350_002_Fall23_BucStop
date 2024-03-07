@@ -1,22 +1,21 @@
 # BucStop
 ### A Team Bobby Project
 ### Members:
-> Isaac Camacho, Richard Cashion, Dylan Cowell, Thomas Foreman,
-> Dionte Jones, Matt Justis, Jacob Klucher, Dylan Lynch, 
-> Caleb Rains, Chris Seals, Kyle Wittman
+> Josh Rucevice, Bryson Brandon, Kurt Brewer, Patrick Vergason
+> Ethan Hensley, Charlie Shahan, Ethan Webb
 #### CSCI 4350
-#### Fall 2023, East Tennessee State University
+#### Spring 2024, East Tennessee State University
 
 ### Overview:
 This project is a game website made by and for ETSU students. It
 is a place to put games created by ETSU students.
-This project also communicates to a microservice with HTTP calls for the game information, the repository is hosted at [Micro Service](https://github.com/chrisseals98/GameInfoMicroService). It is deployed with the microservice using docker compose, see the scripts folder for the docker-compose.yml file.
+This project also communicates to a microservice with HTTP calls for the game information, the repository is hosted at [Micro Service](https://github.com/Redacted-Team/4350_002_Fall23_MicroService). It is deployed with the microservice using docker compose, see the scripts folder for the docker-compose.yml file.
 
 ### Backlog Information:
 [Backlog](https://docs.google.com/document/d/1qtNMQAEP9aWnK6pfo39iGT0Dhm9uwL6oDHdy6B-Vy-4/edit#heading=h.mgz5ua27kudv)
 
-### Minimum Viable Product(MVP):
-[MVP Doc link](https://docs.google.com/document/d/1Dqdo4Uw-TbotZB-qz9TD10u000-2M7HP1iOVBlIGznc/edit)
+### Project Plan:
+[Project Plan Doc link](https://docs.google.com/document/d/1lopwnWAl-WA3CEhNJGGfSxrIz2FvDrpibQSW70T8A-o/edit?usp=sharing)
 
 ### Project Structure: 
 To understand the project structure, familiarize yourself with the
