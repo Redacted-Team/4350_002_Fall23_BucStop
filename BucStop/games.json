@@ -5,7 +5,23 @@
     "Content": "/js/snake.js",
     "Description": "Snake Description",
     "Thumbnail": "/images/snake.jpg",
-    "PlayCount": 0
+    "PlayCount": 0,
+    "LeaderBoardStack": {
+      "KeyValuePairs": [
+        {
+          "name1": "0",
+          "name2": "0",
+          "name3": "0",
+          "name4": "0",
+          "name5": "0",
+          "name6": "0",
+          "name7": "0",
+          "name8": "0",
+          "name9": "0",
+          "name10": "0"
+        }
+      ]
+    }
   },
   {
     "Id": 2,
@@ -13,14 +29,45 @@
     "Content": "/js/tetris.js",
     "Description": "Tetris Description",
     "Thumbnail": "/images/tetris.jpg",
-    "PlayCount": 0
-  },
-  {
-    "Id": 3,
-    "Title": "Pong",
-    "Content": "/js/pong.js",
-    "Description": "Pong Description",
-    "Thumbnail": "/images/pong.jpg",
-    "PlayCount": 0
-  }
+    "PlayCount": 0,
+    "LeaderBoardStack": {
+      "KeyValuePairs": [
+        {
+          "name1": "0",
+          "name2": "0",
+          "name3": "0",
+          "name4": "0",
+          "name5": "0",
+          "name6": "0",
+          "name7": "0",
+          "name8": "0",
+          "name9": "0",
+          "name10": "0"
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Title": "Pong",
+      "Content": "/js/pong.js",
+      "Description": "Pong Description",
+      "Thumbnail": "/images/pong.jpg",
+      "PlayCount": 0,
+      "LeaderBoardStack": {
+        "KeyValuePairs": [
+          {
+            "name1": "0",
+            "name2": "0",
+            "name3": "0",
+            "name4": "0",
+            "name5": "0",
+            "name6": "0",
+            "name7": "0",
+            "name8": "0",
+            "name9": "0",
+            "name10": "0"
+          }
+        ]
+      }
+    }
 ]
