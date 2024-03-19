@@ -7,6 +7,6 @@
         public string Description { get; set; }
         public string DateAdded { get; set; }
         public string HowTo { get; set; }
-        public KeyValuePair<string, int> LeaderBoardStack { get; set; }
+        public Stack<KeyValuePair<string, int>> LeaderBoardStack { get; set; }
     }
 }

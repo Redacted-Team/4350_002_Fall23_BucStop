@@ -45,7 +45,7 @@ namespace BucStop.Models
         [Required]
         public string Thumbnail { get; set; }
 
-        public KeyValuePair<string, int> LeaderBoardStack { get; set; }
+        public Stack<KeyValuePair<string, int>> LeaderBoardStack { get; set; }
         public int PlayCount { get; set; }
 
         /*public async Task OnGet([FromServices] MicroClient microClient)

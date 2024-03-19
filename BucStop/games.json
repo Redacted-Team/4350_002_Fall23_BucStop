@@ -6,63 +6,63 @@
     "Description": "Snake Description",
     "Thumbnail": "/images/snake.jpg",
     "PlayCount": 0,
-    "KeyValuePairs": {
-      "key1": {
-        "name": "name1",
+    "LeaderBoardStack": [
+      {
+        "key": "key1",
         "value": 0
       },
-      "key2": {
-        "name": "name2",
+      {
+        "key": "key2",
         "value": 0
       },
-      "key3": {
-        "name": "name3",
+      {
+        "key": "key3",
         "value": 0
       }
-    }
+    ]
   },
-    {
-      "Id": 2,
-      "Title": "Tetris",
-      "Content": "/js/tetris.js",
-      "Description": "Tetris Description",
-      "Thumbnail": "/images/tetris.jpg",
-      "PlayCount": 0,
-      "KeyValuePairs": {
-        "key1": {
-          "name": "name1",
-          "value": 0
-        },
-        "key2": {
-          "name": "name2",
-          "value": 0
-        },
-        "key3": {
-          "name": "name3",
-          "value": 0
-        }
+  {
+    "Id": 2,
+    "Title": "Tetris",
+    "Content": "/js/tetris.js",
+    "Description": "Tetris Description",
+    "Thumbnail": "/images/tetris.jpg",
+    "PlayCount": 0,
+    "LeaderBoardStack": [
+      {
+        "key": "key1",
+        "value": 0
+      },
+      {
+        "key": "key2",
+        "value": 0
+      },
+      {
+        "key": "key3",
+        "value": 0
       }
-    },
-    {
-      "Id": 3,
-      "Title": "Pong",
-      "Content": "/js/pong.js",
-      "Description": "Pong Description",
-      "Thumbnail": "/images/pong.jpg",
-      "PlayCount": 0,
-      "KeyValuePairs": {
-        "key1": {
-          "name": "name1",
-          "value": 0
-        },
-        "key2": {
-          "name": "name2",
-          "value": 0
-        },
-        "key3": {
-          "name": "name3",
-          "value": 0
-        }
+    ]
+  },
+  {
+    "Id": 3,
+    "Title": "Pong",
+    "Content": "/js/pong.js",
+    "Description": "Pong Description",
+    "Thumbnail": "/images/pong.jpg",
+    "PlayCount": 0,
+    "LeaderBoardStack": [
+      {
+        "key": "key1",
+        "value": 0
+      },
+      {
+        "key": "key2",
+        "value": 0
+      },
+      {
+        "key": "key3",
+        "value": 0
       }
-    }
+    ]
+  }
 ]
