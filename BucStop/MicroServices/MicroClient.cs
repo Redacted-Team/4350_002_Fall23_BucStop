@@ -29,7 +29,7 @@ namespace BucStop
         {
             try
             {
-                var responseMessage = await this.client.GetAsync("/Gateway");
+                var responseMessage = await this.client.GetAsync("/micro");
 
                 if (responseMessage != null)
                 {
