@@ -1,4 +1,6 @@
 using BucStop;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 
 /*
  * This is the base program which starts the project.
@@ -23,6 +25,15 @@ builder.Services.AddAuthentication("CustomAuthenticationScheme").AddCookie("Cust
 {
     options.LoginPath = "/Account/Login";
 });
+
+builder.Services.AddLogging(builder =>
+{
+    builder.AddConsole();
+    builder.AddDebug();
+    builder.AddTimestampLogger(); // Add timestamp logger
+});
+
+
 
 builder.Services.AddSingleton<GameService>();
 

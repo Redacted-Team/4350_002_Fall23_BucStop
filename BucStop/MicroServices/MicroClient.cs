@@ -42,7 +42,6 @@ namespace BucStop
                 _logger.LogError(ex.Message);
             }
             return new GameInfo[] { };
-
         }
 
         /*
