@@ -50,6 +50,16 @@ namespace BucStop.Controllers
             return View();
         }
 
+        public IActionResult TwoDotTwo()
+        {
+            return View();
+        }
+
+        public IActionResult TwoDotThree()
+        {
+            return View();
+        }
+
         //If something goes wrong, this will take the user to a page explaining the error.
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
