@@ -1,6 +1,4 @@
 using BucStop;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Console;
 
 /*
  * This is the base program which starts the project.
@@ -26,6 +24,7 @@ builder.Services.AddAuthentication("CustomAuthenticationScheme").AddCookie("Cust
     options.LoginPath = "/Account/Login";
 });
 
+// This creates the services for the Logging files.
 builder.Services.AddLogging(builder =>
 {
     builder.AddConsole();
