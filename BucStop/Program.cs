@@ -24,6 +24,16 @@ builder.Services.AddAuthentication("CustomAuthenticationScheme").AddCookie("Cust
     options.LoginPath = "/Account/Login";
 });
 
+// This creates the services for the Logging files.
+builder.Services.AddLogging(builder =>
+{
+    builder.AddConsole();
+    builder.AddDebug();
+    builder.AddTimestampLogger(); // Add timestamp logger
+});
+
+
+
 builder.Services.AddSingleton<GameService>();
 
 var app = builder.Build();
