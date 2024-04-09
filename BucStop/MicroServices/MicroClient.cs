@@ -29,7 +29,7 @@ namespace BucStop
         {
             try
             {
-                var responseMessage = await this.client.GetAsync("/Micro");
+                var responseMessage = await this.client.GetAsync("https://localhost:4141/Gateway");
 
                 if (responseMessage != null)
                 {
@@ -42,7 +42,6 @@ namespace BucStop
                 _logger.LogError(ex.Message);
             }
             return new GameInfo[] { };
-
         }
 
         /*
