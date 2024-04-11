@@ -1,10 +1,10 @@
 # BucStop
-> Team: [Redacted] 
-> Scrum Master: Josh Rucevice 
-> PO: Bryson Brandon 
-> Developers: Ethan Hensley, Kurt Brewer, Charlie Shahan, Patrick Vergason, Ethan Webb
+* Team: [Redacted] 
+* Scrum Master: Josh Rucevice 
+* PO: Bryson Brandon 
+* Developers: Ethan Hensley, Kurt Brewer, Charlie Shahan, Patrick Vergason, Ethan Webb
 #### CSCI 4350
-#### Spring 2023, East Tennessee State University
+#### Spring 2024, East Tennessee State University
 
 ### Overview:
 This project is a game website made by and for ETSU students. It
