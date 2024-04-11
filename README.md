@@ -1,11 +1,10 @@
 # BucStop
-### A Team Bobby Project
-### Members:
-> Isaac Camacho, Richard Cashion, Dylan Cowell, Thomas Foreman,
-> Dionte Jones, Matt Justis, Jacob Klucher, Dylan Lynch, 
-> Caleb Rains, Chris Seals, Kyle Wittman
+Team: [Redacted] 
+Scrum Master: Josh Rucevice 
+PO: Bryson Brandon 
+Developers: Ethan Hensley, Kurt Brewer, Charlie Shahan, Patrick Vergason, Ethan Webb
 #### CSCI 4350
-#### Fall 2023, East Tennessee State University
+#### Spring 2023, East Tennessee State University
 
 ### Overview:
 This project is a game website made by and for ETSU students. It
