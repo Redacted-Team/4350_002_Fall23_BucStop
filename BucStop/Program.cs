@@ -14,7 +14,7 @@ var configuration=provider.GetRequiredService<IConfiguration>();
 
 builder.Services.AddHttpClient<MicroClient>(client =>
 {
-    var baseAddress = new Uri(configuration.GetValue<string>("Micro"));
+    var baseAddress = new Uri(configuration.GetValue<string>("Gateway"));
 
     client.BaseAddress = baseAddress;
 });
