@@ -15,7 +15,7 @@ This project also communicates to a microservice with HTTP calls for the game in
 [Backlog](https://brandonbcb02.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?epics=visible&atlOrigin=eyJpIjoiMjgzYjkwZGI0ZjU3NDNiM2JhMDNiOWU4MDliZjQ0YjEiLCJwIjoiaiJ9)
 
 ### Project Plan:
-[Project Plan Doc link](https://docs.google.com/document/d/1lopwnWAl-WA3CEhNJGGfSxrIz2FvDrpibQSW70T8A-o/edit?usp=sharing)
+[Project Plan Doc link](https://docs.google.com/document/d/1lopwnWAl-WA3CEhNJGGfSxrIz2FvDrpibQSW70T8A-o/edit)
 
 ### Project Structure: 
 To understand the project structure, familiarize yourself with the
