@@ -25,6 +25,10 @@ namespace BucStop
             this._logger = logger;
         }
 
+        /// <summary>
+        /// Requests the Gateway for a List of Game Information 
+        /// </summary>
+        /// <returns></returns>
         public async Task<GameInfo[]> GetGamesAsync()
         {
             try
