@@ -24,12 +24,11 @@ builder.Services.AddAuthentication("CustomAuthenticationScheme").AddCookie("Cust
     options.LoginPath = "/Account/Login";
 });
 
-// This creates the services for the Logging files.
-builder.Services.AddLogging(builder =>
+// This creates the timestamp for the logger.
+builder.Logging.AddSimpleConsole(options =>
 {
-    builder.AddConsole();
-    builder.AddDebug();
-    builder.AddTimestampLogger(); // Add timestamp logger
+    options.IncludeScopes = true;
+    options.TimestampFormat = "yyyy-MM-dd HH:mm:ss ";
 });
 
 
