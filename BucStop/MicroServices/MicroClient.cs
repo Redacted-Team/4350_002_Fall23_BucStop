@@ -25,11 +25,15 @@ namespace BucStop
             this._logger = logger;
         }
 
+        /// <summary>
+        /// Requests the Gateway for a List of Game Information 
+        /// </summary>
+        /// <returns></returns>
         public async Task<GameInfo[]> GetGamesAsync()
         {
             try
             {
-                var responseMessage = await this.client.GetAsync("https://localhost:4141/Gateway");
+                var responseMessage = await this.client.GetAsync("/Gateway");
 
                 if (responseMessage != null)
                 {
