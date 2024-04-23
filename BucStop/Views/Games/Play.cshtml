@@ -40,8 +40,10 @@
                             <canvas width="400" height="500" id="game" style="border: 1px solid #000000; background-color: gray"></canvas>
                         }
 
-                            <!-- Embed the game's Javascript here -->
-                            <script src="@Url.Content(Model.Content)"></script>
+                        <!-- Embed the game's Javascript here -->
+                        <script src="@Url.Content(Model.Content)"></script>
+
+                        <p id="playerScore" style="color:black">Current Score: 0</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +74,6 @@
                     <p>@Model.HowTo</p>
                 </div>
                 <div class="tab-pane fade" id="leaderboard" role="tabpanel" aria-labelledby="leaderboard-tab">
-                    <p>Leaderboard here</p>
                 </div>
             </div>
         </div>

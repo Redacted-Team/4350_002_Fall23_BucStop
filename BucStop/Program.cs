@@ -14,7 +14,7 @@ var configuration=provider.GetRequiredService<IConfiguration>();
 
 builder.Services.AddHttpClient<MicroClient>(client =>
 {
-    var baseAddress = new Uri(configuration.GetValue<string>("Micro"));
+    var baseAddress = new Uri(configuration.GetValue<string>("Gateway"));
 
     client.BaseAddress = baseAddress;
 });
@@ -23,6 +23,15 @@ builder.Services.AddAuthentication("CustomAuthenticationScheme").AddCookie("Cust
 {
     options.LoginPath = "/Account/Login";
 });
+
+// This creates the timestamp for the logger.
+builder.Logging.AddSimpleConsole(options =>
+{
+    options.IncludeScopes = true;
+    options.TimestampFormat = "yyyy-MM-dd HH:mm:ss ";
+});
+
+
 
 builder.Services.AddSingleton<GameService>();
 
